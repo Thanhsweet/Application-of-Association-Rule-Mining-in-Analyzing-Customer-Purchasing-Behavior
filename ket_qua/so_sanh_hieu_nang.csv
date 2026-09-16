@@ -1,0 +1,6 @@
+﻿min_support,apriori_tu_viet_s,apriori_mlxtend_s,fpgrowth_s,so_tap_pho_bien,apriori_tuviet_so_tap
+0.06,0.13,0.21,0.23,26,26
+0.04,0.22,0.63,0.44,87,87
+0.03,0.47,1.07,0.92,181,181
+0.02,1.58,2.38,2.09,483,483
+0.015,3.23,4.01,3.31,943,943

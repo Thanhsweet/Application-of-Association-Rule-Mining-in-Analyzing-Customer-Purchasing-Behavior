@@ -1,0 +1,147 @@
+==========================================================================
+BO DU LIEU MAU (9 giao dich, min_support = 2/9 = 22.2%, min_conf = 2/3 = 66.7%)
+==========================================================================
+  T1: {I1, I2, I5}
+  T2: {I2, I4}
+  T3: {I2, I3}
+  T4: {I1, I2, I4}
+  T5: {I1, I3}
+  T6: {I2, I3}
+  T7: {I1, I3}
+  T8: {I1, I2, I3, I5}
+  T9: {I1, I2, I3}
+
+==========================================================================
+1. THUAT TOAN BRUTE-FORCE (VET CAN)
+==========================================================================
+Tap phan tu: {I1, I2, I3, I4, I5}  (2^5 - 1 = 31 tap con xet duyet)
+[C1] Sinh tat ca 5 tap ung vien 1 phan tu:
+    {I1}: support = 6/9 = 0.667
+    {I2}: support = 7/9 = 0.778
+    {I3}: support = 6/9 = 0.667
+    {I4}: support = 2/9 = 0.222
+    {I5}: support = 2/9 = 0.222
+[L1] Tap pho bien sau loc (sup >= 22.2%):
+    {I1}: support = 6/9 = 0.667
+    {I2}: support = 7/9 = 0.778
+    {I3}: support = 6/9 = 0.667
+    {I4}: support = 2/9 = 0.222
+    {I5}: support = 2/9 = 0.222
+
+[C2] Sinh tat ca 10 tap ung vien 2 phan tu:
+    {I1, I2}: support = 4/9 = 0.444
+    {I1, I3}: support = 4/9 = 0.444
+    {I1, I4}: support = 1/9 = 0.111
+    {I1, I5}: support = 2/9 = 0.222
+    {I2, I3}: support = 4/9 = 0.444
+    {I2, I4}: support = 2/9 = 0.222
+    {I2, I5}: support = 2/9 = 0.222
+    {I3, I4}: support = 0/9 = 0.000
+    {I3, I5}: support = 1/9 = 0.111
+    {I4, I5}: support = 0/9 = 0.000
+[L2] Tap pho bien sau loc (sup >= 22.2%):
+    {I1, I2}: support = 4/9 = 0.444
+    {I1, I3}: support = 4/9 = 0.444
+    {I1, I5}: support = 2/9 = 0.222
+    {I2, I3}: support = 4/9 = 0.444
+    {I2, I4}: support = 2/9 = 0.222
+    {I2, I5}: support = 2/9 = 0.222
+
+[C3] Sinh tat ca 10 tap ung vien 3 phan tu:
+    {I1, I2, I3}: support = 2/9 = 0.222
+    {I1, I2, I4}: support = 1/9 = 0.111
+    {I1, I2, I5}: support = 2/9 = 0.222
+    {I1, I3, I4}: support = 0/9 = 0.000
+    {I1, I3, I5}: support = 1/9 = 0.111
+    {I1, I4, I5}: support = 0/9 = 0.000
+    {I2, I3, I4}: support = 0/9 = 0.000
+    {I2, I3, I5}: support = 1/9 = 0.111
+    {I2, I4, I5}: support = 0/9 = 0.000
+    {I3, I4, I5}: support = 0/9 = 0.000
+[L3] Tap pho bien sau loc (sup >= 22.2%):
+    {I1, I2, I3}: support = 2/9 = 0.222
+    {I1, I2, I5}: support = 2/9 = 0.222
+
+[C4] Sinh tat ca 5 tap ung vien 4 phan tu:
+    {I1, I2, I3, I4}: support = 0/9 = 0.000
+    {I1, I2, I3, I5}: support = 1/9 = 0.111
+    {I1, I2, I4, I5}: support = 0/9 = 0.000
+    {I1, I3, I4, I5}: support = 0/9 = 0.000
+    {I2, I3, I4, I5}: support = 0/9 = 0.000
+[L4] Tap pho bien sau loc (sup >= 22.2%):
+
+==========================================================================
+2. THUAT TOAN APRIORI (TU CAI DAT - JOIN + PRUNE + QUET)
+==========================================================================
+[C1] Quet dem support tung mat hang:
+    {I1}: support = 6/9 = 0.667
+    {I2}: support = 7/9 = 0.778
+    {I3}: support = 6/9 = 0.667
+    {I4}: support = 2/9 = 0.222
+    {I5}: support = 2/9 = 0.222
+[L1] Tap pho bien cap 1 (sup >= 22.2%):
+    {I1}: support = 6/9 = 0.667
+    {I2}: support = 7/9 = 0.778
+    {I3}: support = 6/9 = 0.667
+    {I4}: support = 2/9 = 0.222
+    {I5}: support = 2/9 = 0.222
+[C2] JOIN sinh 10 ung vien, PRUNE loai 0 ung vien co tap con khong pho bien:
+    {I1, I2}: support = 4/9 = 0.444
+    {I1, I3}: support = 4/9 = 0.444
+    {I1, I4}: support = 1/9 = 0.111
+    {I1, I5}: support = 2/9 = 0.222
+    {I2, I3}: support = 4/9 = 0.444
+    {I2, I4}: support = 2/9 = 0.222
+    {I2, I5}: support = 2/9 = 0.222
+    {I3, I4}: support = 0/9 = 0.000
+    {I3, I5}: support = 1/9 = 0.111
+    {I4, I5}: support = 0/9 = 0.000
+[L2] Tap pho bien sau quet:
+    {I1, I2}: support = 4/9 = 0.444
+    {I1, I3}: support = 4/9 = 0.444
+    {I1, I5}: support = 2/9 = 0.222
+    {I2, I3}: support = 4/9 = 0.444
+    {I2, I4}: support = 2/9 = 0.222
+    {I2, I5}: support = 2/9 = 0.222
+
+[C3] JOIN sinh 6 ung vien, PRUNE loai 4 ung vien co tap con khong pho bien:
+    {I1, I3, I5}  <- BI CAT (ton tai tap con khong thuoc L2)
+    {I2, I3, I4}  <- BI CAT (ton tai tap con khong thuoc L2)
+    {I2, I4, I5}  <- BI CAT (ton tai tap con khong thuoc L2)
+    {I2, I3, I5}  <- BI CAT (ton tai tap con khong thuoc L2)
+    {I1, I2, I3}: support = 2/9 = 0.222
+    {I1, I2, I5}: support = 2/9 = 0.222
+[L3] Tap pho bien sau quet:
+    {I1, I2, I3}: support = 2/9 = 0.222
+    {I1, I2, I5}: support = 2/9 = 0.222
+
+[C4] JOIN sinh 1 ung vien, PRUNE loai 1 ung vien co tap con khong pho bien:
+    {I1, I2, I3, I5}  <- BI CAT (ton tai tap con khong thuoc L3)
+[L4] Tap pho bien sau quet:
+
+==========================================================================
+3. TAO LUAT KET HOP (min_conf = 66.7%, min_lift = 1)
+==========================================================================
+So luat thoa dieu kien: 8
+Luat                         sup(A∪B)    conf    lift  leverage
+{I5} -> {I1, I2}                0.222   1.000   2.250     0.123
+{I5} -> {I1}                    0.222   1.000   1.500     0.074
+{I2, I5} -> {I1}                0.222   1.000   1.500     0.074
+{I4} -> {I2}                    0.222   1.000   1.286     0.049
+{I5} -> {I2}                    0.222   1.000   1.286     0.049
+{I1, I5} -> {I2}                0.222   1.000   1.286     0.049
+{I1} -> {I3}                    0.444   0.667   1.000     0.000
+{I3} -> {I1}                    0.444   0.667   1.000     0.000
+
+==========================================================================
+4. KIEM CHUNG VOI KET QUA CHUAN TRONG GIAO TRINH (Han & Kamber)
+==========================================================================
+Giao trinh cho ket qua (min_sup = 2/9):
+  L1 = {I1, I2, I3, I4, I5}
+  L2 = {I1,I2}:4, {I1,I3}:4, {I1,I5}:2, {I2,I3}:4, {I2,I4}:2, {I2,I5}:2
+  L3 = {I1,I2,I3}:2, {I1,I2,I5}:2
+  L1: DUNG  (code: 5 tap | chuan: 5 tap)
+  L2: DUNG  (code: 6 tap | chuan: 6 tap)
+  L3: DUNG  (code: 2 tap | chuan: 2 tap)
+
+==> KET LUAN KIEM CHUNG: KHOP HOAN TOAN voi giao trinh

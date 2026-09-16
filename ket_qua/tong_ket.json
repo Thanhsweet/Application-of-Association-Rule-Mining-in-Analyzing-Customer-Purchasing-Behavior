@@ -1,0 +1,232 @@
+{
+  "so_dong_goc": 541909,
+  "so_cot_goc": 8,
+  "so_dong_sach": 527634,
+  "so_don_hang_sach": 19773,
+  "so_mat_hang_sach": 3997,
+  "ti_le_uk": 0.9171,
+  "gio_hang_uk": 17901,
+  "mat_hang_tb_gio": 26.44,
+  "trung_vi_gio": 15.0,
+  "gio_hang_phan_tich": 16406,
+  "mat_hang_phan_tich": 2530,
+  "so_luot_toi_thieu_mh": 30,
+  "bang_hieu_nang": [
+    {
+      "min_support": 0.06,
+      "apriori_tu_viet_s": 0.13,
+      "apriori_mlxtend_s": 0.21,
+      "fpgrowth_s": 0.23,
+      "so_tap_pho_bien": 26,
+      "apriori_tuviet_so_tap": 26
+    },
+    {
+      "min_support": 0.04,
+      "apriori_tu_viet_s": 0.22,
+      "apriori_mlxtend_s": 0.63,
+      "fpgrowth_s": 0.44,
+      "so_tap_pho_bien": 87,
+      "apriori_tuviet_so_tap": 87
+    },
+    {
+      "min_support": 0.03,
+      "apriori_tu_viet_s": 0.47,
+      "apriori_mlxtend_s": 1.07,
+      "fpgrowth_s": 0.92,
+      "so_tap_pho_bien": 181,
+      "apriori_tuviet_so_tap": 181
+    },
+    {
+      "min_support": 0.02,
+      "apriori_tu_viet_s": 1.58,
+      "apriori_mlxtend_s": 2.38,
+      "fpgrowth_s": 2.09,
+      "so_tap_pho_bien": 483,
+      "apriori_tuviet_so_tap": 483
+    },
+    {
+      "min_support": 0.015,
+      "apriori_tu_viet_s": 3.23,
+      "apriori_mlxtend_s": 4.01,
+      "fpgrowth_s": 3.31,
+      "so_tap_pho_bien": 943,
+      "apriori_tuviet_so_tap": 943
+    }
+  ],
+  "min_sup_chon": 0.02,
+  "thoi_gian_apriori_s": 1.58,
+  "so_tap_theo_k": {
+    "1": 353,
+    "2": 123,
+    "3": 7
+  },
+  "kiem_chung_fpgrowth_khop": true,
+  "min_conf": 0.35,
+  "min_lift": 1.2,
+  "so_luat": 202,
+  "kiem_chung_luat_khop": true,
+  "top10_theo_lift": [
+    {
+      "luat": "SMALL MARSHMALLOWS PINK BOWL → SMALL DOLLY MIX DESIGN ORANGE BOWL",
+      "support": 0.0204,
+      "confidence": 0.7791,
+      "lift": 25.0616,
+      "leverage": 0.0196,
+      "conviction": 4.386
+    },
+    {
+      "luat": "SMALL DOLLY MIX DESIGN ORANGE BOWL → SMALL MARSHMALLOWS PINK BOWL",
+      "support": 0.0204,
+      "confidence": 0.6569,
+      "lift": 25.0616,
+      "leverage": 0.0196,
+      "conviction": 2.838
+    },
+    {
+      "luat": "WOODEN STAR CHRISTMAS SCANDINAVIAN → WOODEN HEART CHRISTMAS SCANDINAVIAN",
+      "support": 0.0224,
+      "confidence": 0.7699,
+      "lift": 24.8145,
+      "leverage": 0.0215,
+      "conviction": 4.211
+    },
+    {
+      "luat": "WOODEN HEART CHRISTMAS SCANDINAVIAN → WOODEN STAR CHRISTMAS SCANDINAVIAN",
+      "support": 0.0224,
+      "confidence": 0.723,
+      "lift": 24.8145,
+      "leverage": 0.0215,
+      "conviction": 3.505
+    },
+    {
+      "luat": "GREEN REGENCY TEACUP AND SAUCER + ROSES REGENCY TEACUP AND SAUCER → PINK REGENCY TEACUP AND SAUCER",
+      "support": 0.03,
+      "confidence": 0.7029,
+      "lift": 16.5202,
+      "leverage": 0.0282,
+      "conviction": 3.222
+    },
+    {
+      "luat": "PINK REGENCY TEACUP AND SAUCER → GREEN REGENCY TEACUP AND SAUCER + ROSES REGENCY TEACUP AND SAUCER",
+      "support": 0.03,
+      "confidence": 0.7049,
+      "lift": 16.5202,
+      "leverage": 0.0282,
+      "conviction": 3.244
+    },
+    {
+      "luat": "HAND WARMER SCOTTY DOG DESIGN → HAND WARMER OWL DESIGN",
+      "support": 0.0202,
+      "confidence": 0.6187,
+      "lift": 16.1628,
+      "leverage": 0.0189,
+      "conviction": 2.522
+    },
+    {
+      "luat": "HAND WARMER OWL DESIGN → HAND WARMER SCOTTY DOG DESIGN",
+      "support": 0.0202,
+      "confidence": 0.5271,
+      "lift": 16.1628,
+      "leverage": 0.0189,
+      "conviction": 2.046
+    },
+    {
+      "luat": "PINK REGENCY TEACUP AND SAUCER + ROSES REGENCY TEACUP AND SAUCER → GREEN REGENCY TEACUP AND SAUCER",
+      "support": 0.03,
+      "confidence": 0.9028,
+      "lift": 15.8912,
+      "leverage": 0.0281,
+      "conviction": 9.699
+    },
+    {
+      "luat": "GREEN REGENCY TEACUP AND SAUCER → PINK REGENCY TEACUP AND SAUCER + ROSES REGENCY TEACUP AND SAUCER",
+      "support": 0.03,
+      "confidence": 0.5279,
+      "lift": 15.8912,
+      "leverage": 0.0281,
+      "conviction": 2.048
+    }
+  ],
+  "top10_theo_conf": [
+    {
+      "luat": "PINK REGENCY TEACUP AND SAUCER + ROSES REGENCY TEACUP AND SAUCER → GREEN REGENCY TEACUP AND SAUCER",
+      "support": 0.03,
+      "confidence": 0.9028,
+      "lift": 15.8912,
+      "leverage": 0.0281,
+      "conviction": 9.699
+    },
+    {
+      "luat": "GREEN REGENCY TEACUP AND SAUCER + PINK REGENCY TEACUP AND SAUCER → ROSES REGENCY TEACUP AND SAUCER",
+      "support": 0.03,
+      "confidence": 0.8542,
+      "lift": 14.7046,
+      "leverage": 0.0279,
+      "conviction": 6.459
+    },
+    {
+      "luat": "PINK REGENCY TEACUP AND SAUCER → GREEN REGENCY TEACUP AND SAUCER",
+      "support": 0.0351,
+      "confidence": 0.8252,
+      "lift": 14.5263,
+      "leverage": 0.0327,
+      "conviction": 5.396
+    },
+    {
+      "luat": "JUMBO BAG PINK POLKADOT + JUMBO SHOPPER VINTAGE RED PAISLEY → JUMBO BAG RED RETROSPOT",
+      "support": 0.0223,
+      "confidence": 0.8062,
+      "lift": 6.8885,
+      "leverage": 0.0191,
+      "conviction": 4.555
+    },
+    {
+      "luat": "JUMBO BAG PINK POLKADOT + JUMBO STORAGE BAG SUKI → JUMBO BAG RED RETROSPOT",
+      "support": 0.0247,
+      "confidence": 0.802,
+      "lift": 6.8528,
+      "leverage": 0.0211,
+      "conviction": 4.459
+    },
+    {
+      "luat": "REGENCY CAKESTAND 3 TIER + ROSES REGENCY TEACUP AND SAUCER → GREEN REGENCY TEACUP AND SAUCER",
+      "support": 0.0219,
+      "confidence": 0.7907,
+      "lift": 13.9196,
+      "leverage": 0.0203,
+      "conviction": 4.507
+    },
+    {
+      "luat": "GREEN REGENCY TEACUP AND SAUCER + REGENCY CAKESTAND 3 TIER → ROSES REGENCY TEACUP AND SAUCER",
+      "support": 0.0219,
+      "confidence": 0.7907,
+      "lift": 13.6128,
+      "leverage": 0.0203,
+      "conviction": 4.501
+    },
+    {
+      "luat": "PINK REGENCY TEACUP AND SAUCER → ROSES REGENCY TEACUP AND SAUCER",
+      "support": 0.0332,
+      "confidence": 0.7808,
+      "lift": 13.4416,
+      "leverage": 0.0307,
+      "conviction": 4.297
+    },
+    {
+      "luat": "SMALL MARSHMALLOWS PINK BOWL → SMALL DOLLY MIX DESIGN ORANGE BOWL",
+      "support": 0.0204,
+      "confidence": 0.7791,
+      "lift": 25.0616,
+      "leverage": 0.0196,
+      "conviction": 4.386
+    },
+    {
+      "luat": "WOODEN STAR CHRISTMAS SCANDINAVIAN → WOODEN HEART CHRISTMAS SCANDINAVIAN",
+      "support": 0.0224,
+      "confidence": 0.7699,
+      "lift": 24.8145,
+      "leverage": 0.0215,
+      "conviction": 4.211
+    }
+  ]
+}
